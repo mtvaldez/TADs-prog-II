@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="commons-csv-1.10.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0/commons-csv-1.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0/commons-csv-1.10.0-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0" />
+      <root url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0" />
+      <root url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$PROJECT_DIR$/Obligatorio 2023/Libraries/commons-csv-1.10.0" recursive="false" type="SOURCES" />
+  </library>
+</component>
