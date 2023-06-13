@@ -184,6 +184,20 @@ public class MyLinkedListImpl<T> implements MyList<T> {
 
         return size;
     }
+    @Override
+    public MyLinkedListImpl clone(){
+        MyLinkedListImpl<T> clone = new MyLinkedListImpl<>();
 
+        Node<T> temp = this.first;
+
+        while (temp != null) {
+
+            clone.add(temp.getValue());
+            temp = temp.getNext();
+
+        }
+
+        return clone;
+    }
 
 }

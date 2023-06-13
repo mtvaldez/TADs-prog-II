@@ -74,14 +74,24 @@ public class ElTweeter {
     }
 
 
-    public MyLinkedListImpl<User> topUsersByTweets(int n) throws NodeNotFound {
+    public MyLinkedListImpl<User> topUsersByTweets() {
         MyLinkedListImpl<User> topUsers = new MyLinkedListImpl<>();
-
-        for (int i = 0; i < n; i++) {
-
+        MyLinkedListImpl<User> clone = this.users.clone();
+        while (topUsers.size() < 15){
+           User temp = clone.get(0);
+           for (int i = 0; i < users.size();i++){
+               if (users.get(i).getTweets().size() > temp.getTweets().size()){
+                   temp = users.get(i);
+               }
+           }
+           topUsers.add(temp);
+           clone.remove(temp);
         }
         return topUsers;
     }
+
+
+
     //    Top 15 usuarios con más tweets. Este listado debe incluir el nombre de usuario, la
 //    cantidad de tweets, y si el usuario está verificado o no, ordenado por cantidad de
 //    tweets en orden destadcendente. Se espera que esta operación sea de orden n en

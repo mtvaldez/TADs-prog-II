@@ -12,4 +12,6 @@ public interface MyList<T> {
 
     int size();
 
+    MyLinkedListImpl clone();
+
 }
