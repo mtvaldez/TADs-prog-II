@@ -1,85 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="972bd442-8524-400c-8d22-2df0fbe5d5e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_csv_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/ElTweeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/HashTagAlreadyExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/HashTagDoesNotExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/UserAlreadyExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/UserDoesNotExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tads/BinarySearchTree/MyBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tads/BinarySearchTree/MyBSTImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tads/BinarySearchTree/NodeBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tads/exceptions/NodeAlreadyExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tads/exceptions/NodeNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tads/linkedlist/MyLinkedListImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tads/linkedlist/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tads/linkedlist/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obligatorio 2023.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio 2023.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/HashTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/HashTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/Programacion2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/exceptions/NodeAlreadyExists.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/exceptions/NodeNotFound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/BinarySearchTree/MyBST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/BinarySearchTree/MyBSTImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/BinarySearchTree/NodeBST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/hash/MyHash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/hash/MyHashImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/heap/MyHeap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/heap/MyHeapImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/linkedlist/MyLinkedListImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/linkedlist/MyList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/linkedlist/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/queue/EmptyQueueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/queue/MyQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/stack/EmptyStackException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/production/Programacion2/uy/edu/um/prog2/adt/stack/MyStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/test/Programacion2/uy/edu/um/adt/AllTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/test/Programacion2/uy/edu/um/adt/binarytree/tests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/test/Programacion2/uy/edu/um/adt/hash/HashImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/test/Programacion2/uy/edu/um/adt/heap/HeapImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/test/Programacion2/uy/edu/um/adt/linkedlist/LinkedListImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/test/Programacion2/uy/edu/um/adt/queue/QueueImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/out/test/Programacion2/uy/edu/um/adt/stack/StackImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/BinarySearchTree/MyBST.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/BinarySearchTree/MyBSTImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/BinarySearchTree/NodeBST.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/exceptions/NodeAlreadyExists.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/exceptions/NodeNotFound.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/hash/MyHash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/hash/MyHashImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/heap/MyHeap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/heap/MyHeapImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/linkedlist/MyLinkedListImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/linkedlist/MyList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/linkedlist/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/queue/EmptyQueueException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/queue/MyQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/stack/EmptyStackException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/src/uy/edu/um/prog2/adt/stack/MyStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/test/uy/edu/um/adt/AllTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/test/uy/edu/um/adt/binarytree/tests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/test/uy/edu/um/adt/hash/HashImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/test/uy/edu/um/adt/heap/HeapImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/test/uy/edu/um/adt/linkedlist/LinkedListImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/test/uy/edu/um/adt/queue/QueueImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TADs obligatorio/test/uy/edu/um/adt/stack/StackImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ElTweeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ElTweeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tads/linkedlist/MyLinkedListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tads/linkedlist/MyLinkedListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tads/linkedlist/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tads/linkedlist/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,13 +23,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/mauro/Documents/GitHub tads/Obligatorio 2023/src"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mauro/Documents/GitHub tads/Obligatorio 2023/src&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mauro\Documents\GitHub tads\Obligatorio 2023\src" />
