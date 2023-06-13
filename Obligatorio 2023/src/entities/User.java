@@ -1,13 +1,28 @@
 package entities;
 
+import tads.linkedlist.MyLinkedListImpl;
+import tads.linkedlist.MyList;
+
 public class User {
 
     private long id;
     private String name;
+    private MyList<Tweet> tweets = new MyLinkedListImpl<>();;
+    private boolean isVerified;
 
-    public User(long id, String name) {
+
+    public User(long id, String name, boolean isVerified) {
         this.id = id;
         this.name = name;
+        this.isVerified = isVerified;
+    }
+
+    public MyList<Tweet> getTweets() {
+        return tweets;
+    }
+
+    public void setTweets(MyList<Tweet> tweets) {
+        this.tweets = tweets;
     }
 
     public long getId() {

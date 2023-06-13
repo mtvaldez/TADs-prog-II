@@ -6,12 +6,33 @@ public class Tweet {
     private String content;
     private String source;
     private boolean isRetweet;
+    private HashTag hashTag;
+    private User user;
 
-    public Tweet(long id, String content, String source, boolean isRetweet) {
+
+    public Tweet(Long id, String content, String source, boolean isRetweet, HashTag hashTag, User user) {
         this.id = id;
         this.content = content;
         this.source = source;
         this.isRetweet = isRetweet;
+        this.hashTag = hashTag;
+        this.user = user;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public HashTag getHashTag() {
+        return hashTag;
+    }
+
+    public void setHashTag(HashTag hashTag) {
+        this.hashTag = hashTag;
     }
 
     public long getId() {
