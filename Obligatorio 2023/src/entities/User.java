@@ -9,12 +9,29 @@ public class User {
     private String name;
     private MyList<Tweet> tweets = new MyLinkedListImpl<>();;
     private boolean isVerified;
+    private int favorites;
 
 
     public User(long id, String name, boolean isVerified) {
         this.id = id;
         this.name = name;
         this.isVerified = isVerified;
+    }
+
+    public boolean isVerified() {
+        return isVerified;
+    }
+
+    public void setVerified(boolean verified) {
+        isVerified = verified;
+    }
+
+    public int getFavorites() {
+        return favorites;
+    }
+
+    public void setFavorites(int favorites) {
+        this.favorites = favorites;
     }
 
     public MyList<Tweet> getTweets() {

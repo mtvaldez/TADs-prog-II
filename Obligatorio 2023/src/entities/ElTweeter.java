@@ -73,11 +73,14 @@ public class ElTweeter {
         this.hashTags.add(newHashTag);
     }
 
+    // Consulta 1
+    public
 
+    //  Consulta 2
     public MyLinkedListImpl<User> topUsersByTweets() {
         MyLinkedListImpl<User> topUsers = new MyLinkedListImpl<>();
         MyLinkedListImpl<User> clone = this.users.clone();
-        while (topUsers.size() < 15){
+        while (topUsers.size() < 15 && clone.size() > 0){
            User temp = clone.get(0);
            for (int i = 0; i < users.size();i++){
                if (users.get(i).getTweets().size() > temp.getTweets().size()){
@@ -90,10 +93,38 @@ public class ElTweeter {
         return topUsers;
     }
 
+    // Consulta 3
+    public
 
+    // Consulta 4
+    public MyLinkedListImpl<User> topUsersByFavorite() {
+        MyLinkedListImpl<User> topUsers = new MyLinkedListImpl<>();
+        MyLinkedListImpl<User> clone = this.users.clone();
+        while (topUsers.size() < 7 && clone.size() > 0){
+            User temp = clone.get(0);
+            for (int i = 0; i < users.size();i++){
+                if (users.get(i).getFavorites() > temp.getFavorites()){
+                    temp = users.get(i);
+                }
+            }
+            topUsers.add(temp);
+            clone.remove(temp);
+        }
+        return topUsers;
+    }
 
-    //    Top 15 usuarios con más tweets. Este listado debe incluir el nombre de usuario, la
-//    cantidad de tweets, y si el usuario está verificado o no, ordenado por cantidad de
-//    tweets en orden destadcendente. Se espera que esta operación sea de orden n en
-//    notación Big O
+    // Consulta 5
+    public int tweetsWithWord(String word) {
+        int count = 0;
+        for (int i = 0; i < tweets.size(); i++){
+            if (tweets.get(i).getContent().contains(word)){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // Consulta 6
+    public
+
 }
