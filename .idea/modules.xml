@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Obligatorio 2023/Obligatorio 2023.iml" filepath="$PROJECT_DIR$/Obligatorio 2023/Obligatorio 2023.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TADs obligatorio/src/TADs obligatorio.iml" filepath="$PROJECT_DIR$/TADs obligatorio/src/TADs obligatorio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TADs obligatorio/TADs obligatorio1.iml" filepath="$PROJECT_DIR$/TADs obligatorio/TADs obligatorio1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/TADs-prog-II.iml" filepath="$PROJECT_DIR$/.idea/TADs-prog-II.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TADs-prog-II-main/Obligatorio 2023/Obligatorio 2023.iml" filepath="$PROJECT_DIR$/TADs-prog-II-main/Obligatorio 2023/Obligatorio 2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TADs-prog-II-main/TADs obligatorio/TADs obligatorio.iml" filepath="$PROJECT_DIR$/TADs-prog-II-main/TADs obligatorio/TADs obligatorio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TADs-prog-II-main/TADs obligatorio/src/TADs obligatorio1.iml" filepath="$PROJECT_DIR$/TADs-prog-II-main/TADs obligatorio/src/TADs obligatorio1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TADs-prog-II-main.iml" filepath="$PROJECT_DIR$/.idea/TADs-prog-II-main.iml" />
     </modules>
   </component>
 </project>
