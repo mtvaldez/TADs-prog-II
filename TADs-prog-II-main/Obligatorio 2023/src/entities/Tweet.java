@@ -7,11 +7,14 @@ public class Tweet {
     private String source;
     private boolean isRetweet;
 
-    public Tweet(long id, String content, String source, boolean isRetweet) {
+    private String date;
+
+    public Tweet(long id, String content, String source, boolean isRetweet, String date){
         this.id = id;
         this.content = content;
         this.source = source;
         this.isRetweet = isRetweet;
+        this.date = date;
     }
 
     public long getId() {
@@ -46,11 +49,14 @@ public class Tweet {
         isRetweet = retweet;
     }
 
+    public String getDate() {return date;}
+    public String setDate(String date) {return this.date = date;}
+
     @Override
     public boolean equals(Object obj) {
         boolean iguales = false;
         if (this.getClass() == obj.getClass()) {
-            if (this.id == ((Tweet) obj).id){
+            if (this.id == ((Tweet) obj).id) {
                 iguales = true;
             }
         }
