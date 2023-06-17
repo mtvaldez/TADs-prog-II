@@ -1,5 +1,7 @@
 package entities;
 
+import java.time.LocalDateTime;
+
 public class Tweet {
 
     private long id;
@@ -8,6 +10,7 @@ public class Tweet {
     private boolean isRetweet;
     private HashTag hashTag;
     private User user;
+    private  LocalDateTime date;
 
 
     public Tweet(Long id, String content, String source, boolean isRetweet, HashTag hashTag, User user) {
@@ -17,6 +20,14 @@ public class Tweet {
         this.isRetweet = isRetweet;
         this.hashTag = hashTag;
         this.user = user;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
     }
 
     public User getUser() {

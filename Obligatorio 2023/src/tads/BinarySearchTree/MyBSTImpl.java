@@ -12,6 +12,7 @@ public class MyBSTImpl implements MyBST {
     public MyBSTImpl(NodeBST root) {
         this.root = root;
     }
+    @Override
     public NodeBST getRoot() {
         return root;
     }
@@ -51,6 +52,7 @@ public class MyBSTImpl implements MyBST {
         return parent;
 
     }
+    @Override
     public NodeBST findNode(Object key, NodeBST miniRoot) {
 
         if (miniRoot == null) {

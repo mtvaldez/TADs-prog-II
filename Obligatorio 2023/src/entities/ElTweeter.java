@@ -5,17 +5,24 @@ import exceptions.HashTagAlreadyExists;
 import exceptions.HashTagDoesNotExist;
 import exceptions.UserAlreadyExists;
 import exceptions.UserDoesNotExist;
-import tads.exceptions.NodeNotFound;
+import tads.BinarySearchTree.NodeBST;
+import tads.exceptions.NodeAlreadyExists;
 import tads.linkedlist.MyLinkedListImpl;
 import tads.linkedlist.MyList;
+import tads.BinarySearchTree.MyBST;
+import tads.BinarySearchTree.MyBSTImpl;
 
 public class ElTweeter {
 
     private MyList<User> users = new MyLinkedListImpl();
     private MyList<Tweet> tweets = new MyLinkedListImpl<>();
     private MyList<HashTag> hashTags = new MyLinkedListImpl<>();
+    private MyList<String> drivers = new MyLinkedListImpl<>();
+
 
     public ElTweeter() {
+        String[] conduccionistas = {"Max Verstappen", "Sergio Pérez", "Charles Leclerc", "Carlos Sainz", "Lewis Hamilton", "George Russell", "Fernando Alonso", "Lance Stroll", "Lando Norris", "Oscar Piastri", "Pierre Gasly", "Esteban Ocon", "Nyck de Vries", "Yuki Tsunoda", "Alexander Albon", "Logan Sargeant", "Guanyu Zhou", "Valtteri Bottas", "Nico Hülkenberg", "Kevin Magnussen"};
+        drivers.addAll(conduccionistas);
     }
 
     public MyList<User> getUsers() {
@@ -73,8 +80,56 @@ public class ElTweeter {
         this.hashTags.add(newHashTag);
     }
 
+
+
     // Consulta 1
-    public
+    public MyList toptweetes(int mes, int año) {
+        boolean mismaTweetCount = false;
+        MyList<Tweet> tuitsGuenos = new MyLinkedListImpl<>();
+        MyBST<Integer,MyList<String>>  enlistamealospibes = new MyBSTImpl(null);
+
+        for (int i = 0; i < this.tweets.size(); i++) {
+            if (this.tweets.get(i).getDate().getMonthValue() == mes && this.tweets.get(i).getDate().getYear() == año) {
+                tuitsGuenos.add(this.tweets.get(i));
+            }
+        }
+
+        for (int i = 0; i < drivers.size(); i++) {
+            int tweetCount = tweetsWithWord(drivers.get(i));
+
+            MyList<String> palabraIdentifcadoraDePersonas = new MyLinkedListImpl<>();
+            palabraIdentifcadoraDePersonas.add(drivers.get(i));
+
+            try {
+                enlistamealospibes.insert(tweetCount, palabraIdentifcadoraDePersonas);
+            } catch (NodeAlreadyExists e) {
+                MyList<String> aux = (MyList<String>) enlistamealospibes.findNode(tweetCount, enlistamealospibes.getRoot()).getData();
+                aux.add(drivers.get(i));
+                mismaTweetCount = true;
+            }
+
+        }
+
+        MyList topDrivers = enlistamealospibes.inOrder();
+        MyList result = new MyLinkedListImpl();
+
+        if (!mismaTweetCount){
+            while (topDrivers.size() > 10) {
+                topDrivers.remove(topDrivers.get(0));
+            }
+            result = topDrivers;
+        }else {
+            int repetidos = 10;
+            while (result.size() < repetidos) {
+                NodeBST<Integer, MyList<String>> ultimo = (NodeBST<Integer, MyList<String>>) topDrivers.get(topDrivers.size() - 1);
+                repetidos -= ultimo.getData().size();
+                result.add(ultimo);
+                topDrivers.remove(topDrivers.get(topDrivers.size() - 1));
+            }
+        }
+
+        return result;
+    }
 
     //  Consulta 2
     public MyLinkedListImpl<User> topUsersByTweets() {
@@ -94,7 +149,7 @@ public class ElTweeter {
     }
 
     // Consulta 3
-    public
+
 
     // Consulta 4
     public MyLinkedListImpl<User> topUsersByFavorite() {
@@ -125,6 +180,6 @@ public class ElTweeter {
     }
 
     // Consulta 6
-    public
+
 
 }

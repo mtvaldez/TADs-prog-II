@@ -2,11 +2,16 @@ package entities;
 
 import tads.linkedlist.MyLinkedListImpl;
 import tads.linkedlist.MyList;
-
+import java.time.LocalDateTime;
 public class User {
 
     private long id;
     private String name;
+    public String userLocation;
+    public String userDescription;
+    public LocalDateTime userCreated;
+    public String userFollowers;
+    public String userFriends;
     private MyList<Tweet> tweets = new MyLinkedListImpl<>();;
     private boolean isVerified;
     private int favorites;

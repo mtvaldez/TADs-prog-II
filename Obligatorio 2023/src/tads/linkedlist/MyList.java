@@ -13,5 +13,6 @@ public interface MyList<T> {
     int size();
 
     MyLinkedListImpl clone();
+    void addAll(T[] list);
 
 }

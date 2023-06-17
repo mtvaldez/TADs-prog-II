@@ -7,12 +7,24 @@
     <list default="true" id="972bd442-8524-400c-8d22-2df0fbe5d5e5" name="Changes" comment="Consulta 2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/ElTweeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ElTweeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Tweet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tads/BinarySearchTree/MyBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tads/BinarySearchTree/MyBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tads/BinarySearchTree/MyBSTImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tads/BinarySearchTree/MyBSTImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tads/linkedlist/MyLinkedListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tads/linkedlist/MyLinkedListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tads/linkedlist/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tads/linkedlist/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />

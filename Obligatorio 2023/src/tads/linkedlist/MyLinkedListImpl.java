@@ -1,6 +1,7 @@
 package tads.linkedlist;
 
 
+import java.lang.reflect.Array;
 
 public class MyLinkedListImpl<T> implements MyList<T> {
 
@@ -198,6 +199,13 @@ public class MyLinkedListImpl<T> implements MyList<T> {
         }
 
         return clone;
+    }
+
+    @Override
+    public void addAll(T[] list){
+        for (T element: list){
+            this.add(element);
+        }
     }
 
 }
