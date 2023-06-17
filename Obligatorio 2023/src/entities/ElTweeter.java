@@ -83,7 +83,7 @@ public class ElTweeter {
 
 
     // Consulta 1
-    public MyList toptweetes(int mes, int año) {
+    public MyList topMencionesPilots(int mes, int año) {
         boolean mismaTweetCount = false;
         MyList<Tweet> tuitsGuenos = new MyLinkedListImpl<>();
         MyBST<Integer,MyList<String>>  enlistamealospibes = new MyBSTImpl(null);
@@ -131,6 +131,7 @@ public class ElTweeter {
         return result;
     }
 
+
     //  Consulta 2
     public MyLinkedListImpl<User> topUsersByTweets() {
         MyLinkedListImpl<User> topUsers = new MyLinkedListImpl<>();
@@ -148,10 +149,58 @@ public class ElTweeter {
         return topUsers;
     }
 
+
     // Consulta 3
+    public int hashtagsUsadosEnUnDia(int YYYY, int MM, int DD){
+
+        MyList<HashTag> hashtagsUsados = new MyLinkedListImpl<>();
+        int count = 0;
+
+        for (int i = 0; i < this.tweets.size(); i++) {
+
+            if (this.tweets.get(i).getDate().getMonthValue() == MM && this.tweets.get(i).getDate().getYear() == YYYY && this.tweets.get(i).getDate().getDayOfMonth() == DD) {
+
+                if (!hashtagsUsados.contains(this.tweets.get(i).getHashTag())){
+
+                    hashtagsUsados.add(this.tweets.get(i).getHashTag());
+                    count++;
+                }
+
+            }
+        }
+        return count;
+    }
 
 
     // Consulta 4
+    public HashTag hashTagMasUsadoEnUnDia(int YYYY, int MM, int DD){
+        MyList<HashTag> hashtagsUsadosClone = this.hashTags.clone();
+        for (int i = 0; i < this.tweets.size(); i++) {
+            if (this.tweets.get(i).getDate().getMonthValue() == MM && this.tweets.get(i).getDate().getYear() == YYYY && this.tweets.get(i).getDate().getDayOfMonth() == DD) {
+                tweets.get(i).getHashTag().setCount(tweets.get(i).getHashTag().getCount()+1);
+            }
+        }
+
+        if (hashtagsUsadosClone.get(0).getText() == "#f1"){
+            hashtagsUsadosClone.remove(hashtagsUsadosClone.get(0));
+        }
+
+        HashTag temp = hashtagsUsadosClone.get(0);
+        for (int i = 0; i < hashtagsUsadosClone.size(); i++) {
+
+            if (hashtagsUsadosClone.get(i).getText() == "#f1"){
+                hashtagsUsadosClone.remove(hashtagsUsadosClone.get(i));
+            }
+
+            if (hashtagsUsadosClone.get(i).getCount() > temp.getCount()){
+                temp = hashtagsUsadosClone.get(i);
+            }
+        }
+        return temp;
+    }
+
+
+    // Consulta 5
     public MyLinkedListImpl<User> topUsersByFavorite() {
         MyLinkedListImpl<User> topUsers = new MyLinkedListImpl<>();
         MyLinkedListImpl<User> clone = this.users.clone();
@@ -168,7 +217,8 @@ public class ElTweeter {
         return topUsers;
     }
 
-    // Consulta 5
+
+    // Consulta 6
     public int tweetsWithWord(String word) {
         int count = 0;
         for (int i = 0; i < tweets.size(); i++){
@@ -179,7 +229,6 @@ public class ElTweeter {
         return count;
     }
 
-    // Consulta 6
 
 
 }

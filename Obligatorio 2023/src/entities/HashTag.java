@@ -5,10 +5,18 @@ import tads.linkedlist.MyList;
 
 public class HashTag {
 
+    private int count = 0;
     private long id;
     private String text;
     private MyList<Tweet> tweets;
 
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 
     public MyList<Tweet> getTweets() {
         return tweets;
