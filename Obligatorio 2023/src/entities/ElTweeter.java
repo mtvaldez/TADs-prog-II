@@ -11,8 +11,9 @@ import tads.linkedlist.MyLinkedListImpl;
 import tads.linkedlist.MyList;
 import tads.BinarySearchTree.MyBST;
 import tads.BinarySearchTree.MyBSTImpl;
+import java.util.Scanner;
 
-public class ElTweeter {
+public class ElTweeter implements Runnable {
 
     private MyList<User> users = new MyLinkedListImpl();
     private MyList<Tweet> tweets = new MyLinkedListImpl<>();
@@ -132,6 +133,7 @@ public class ElTweeter {
     }
 
 
+
     //  Consulta 2
     public MyLinkedListImpl<User> topUsersByTweets() {
         MyLinkedListImpl<User> topUsers = new MyLinkedListImpl<>();
@@ -230,5 +232,76 @@ public class ElTweeter {
     }
 
 
+    @Override
+    public void run() {
 
+        Boolean exit = false;
+
+        while(!exit){
+            System.out.println("Menu");
+            System.out.println("Ingrese una opcion: ");
+            System.out.println("1. Top 10 de pilotos con mas menciones en un mes y año dados");
+            System.out.println("2. Top 15 de usuarios con mas tweets");
+            System.out.println("3. Numero de hashtags usados en un dia");
+            System.out.println("4. Hashtag mas usado en un dia dado");
+            System.out.println("5. Top 7 de usuarios con mas favoritos");
+            System.out.println("6. Numero de tweets que contienen una palabra especifica");
+            System.out.println("7. Salir");
+            System.out.println(" ");
+
+            Scanner inputR = new Scanner(System.in);
+            int option = inputR.nextInt();
+
+            switch (option){
+                case 1:
+                    System.out.println("Ingrese el mes: ");
+                    int month = inputR.nextInt();
+                    System.out.println("Ingrese el año: ");
+                    int year = inputR.nextInt();
+                    System.out.println(topMencionesPilots(month, year));
+                    System.out.println(" ");
+                    break;
+                case 2:
+                    System.out.println(topUsersByTweets());
+                    System.out.println(" ");
+                    break;
+                case 3:
+                    System.out.println("Ingrese el año: ");
+                    int year1 = inputR.nextInt();
+                    System.out.println("Ingrese el mes: ");
+                    int month1 = inputR.nextInt();
+                    System.out.println("Ingrese el dia: ");
+                    int day = inputR.nextInt();
+                    System.out.println(hashtagsUsadosEnUnDia(year1, month1, day));
+                    System.out.println(" ");
+                    break;
+                case 4:
+                    System.out.println("Ingrese el año: ");
+                    int year2 = inputR.nextInt();
+                    System.out.println("Ingrese el mes: ");
+                    int month2 = inputR.nextInt();
+                    System.out.println("Ingrese el dia: ");
+                    int day1 = inputR.nextInt();
+                    System.out.println(hashTagMasUsadoEnUnDia(year2, month2, day1));
+                    System.out.println(" ");
+                    break;
+                case 5:
+                    System.out.println(topUsersByFavorite());
+                    System.out.println(" ");
+                    break;
+                case 6:
+                    System.out.println("Ingrese la palabra: ");
+                    String word = inputR.next();
+                    System.out.println(tweetsWithWord(word));
+                    System.out.println(" ");
+                    break;
+                case 7:
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Opcion invalida");
+                    break;
+            }
+        }
+    }
 }

@@ -7,7 +7,6 @@
     <list default="true" id="972bd442-8524-400c-8d22-2df0fbe5d5e5" name="Changes" comment="Consulta 2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/ElTweeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ElTweeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/HashTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/HashTag.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
       <recent name="C:\Users\mauro\Documents\GitHub tads\Obligatorio 2023\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.main">
     <configuration name="ElTweeter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="entities.ElTweeter" />
       <module name="Obligatorio 2023" />
@@ -58,8 +57,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="Obligatorio 2023" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.ElTweeter" />
       </list>
     </recent_temporary>
